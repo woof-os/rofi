@@ -20,3 +20,4 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 
 [MIT License](./LICENSE)
 # rofi
+# rofi
