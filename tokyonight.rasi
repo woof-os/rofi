@@ -2,7 +2,7 @@
   background-color: #1a1b26;
   border-color: #1a1b26;
   text-color: #c0caf5;
-  spacing: 0;
+  spacing: 5;
   width: 80%;
   height: 50%;
 }
@@ -39,7 +39,7 @@ element {
 }
 
 element selected {
-  background-color: #bb9af7;
+  border-color: #bb9af7;
   text-color: #15161E;
 }
 
