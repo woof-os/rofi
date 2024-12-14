@@ -1,0 +1,56 @@
+configuration {
+    modi: "drun";
+    display-drun: "";
+    drun-display-format: "{name}";
+    font: "Fira Sans Regular 10";
+}
+
+* {
+    bg: #1a1b26;
+    bg1: #283457;
+    fg: #c0caf5;
+    rad: 5px;
+
+    background-color: @bg;
+    text-color: @fg;
+}
+
+entry, element { border-radius: @rad; }
+
+mainbox {
+    children: [ inputbar, listview ];
+    padding: 48px;
+    spacing: 1em;
+}
+
+inputbar { children: [ entry ]; }
+
+entry {
+    blink: false;
+    padding: 1%;
+    placeholder: "Search";
+    background-color: @bg1;
+}
+
+listview {
+    lines: 8;
+    columns: 2;
+    cycle: false;
+}
+
+element { padding: 1%; }
+element-icon { size: 32px; }
+
+element-text, element-icon {
+    vertical-align: 0.5;
+    background-color: inherit;
+    padding: 0.1%;
+}
+
+element selected, element-text selected {
+    background-color: @fg;
+    text-color: @bg;
+}
+
+element, element-selected, element-text { cursor: pointer; }
+entry { cursor: text; }
